@@ -1,38 +1,38 @@
 
-console.log("lotto...................")
-console.log("lotto...................")
-console.log("lotto...................")
-console.log("lotto...................")
-
-const btn = document.getElementById("btn")
-
-console.log(btn)
-
-btn.addEventListener("click",(event) => {
-    console.log(event)
-
-    const target = document.getElementById("resultDiv")
-
-    const balls = makeLottoNum()
-
-    //clear all <h3> tags
-    target.innerHTML =''
-
-    let str =''
-
-    for (const num of balls) {
-
-        str += `<h3>${num}</h3>`
-
-        target.innerHTML = str
-        // const tag = document.createElement("h3")
-        // const textNode = document.createTextNode(num)
-        // tag.appendChild(textNode)
-        // target.appendChild(tag)
-    }
-
-
-}, false)
+// console.log("lotto...................")
+// console.log("lotto...................")
+// console.log("lotto...................")
+// console.log("lotto...................")
+//
+// const btn = document.getElementById("btn")
+//
+// console.log(btn)
+//
+// btn.addEventListener("click",(event) => {
+//     console.log(event)
+//
+//     const target = document.getElementById("resultDiv")
+//
+//     const balls = makeLottoNum()
+//
+//     //clear all <h3> tags
+//     target.innerHTML =''
+//
+//     let str =''
+//
+//     for (const num of balls) {
+//
+//         str += `<h3>${num}</h3>`
+//
+//         target.innerHTML = str
+//         // const tag = document.createElement("h3")
+//         // const textNode = document.createTextNode(num)
+//         // tag.appendChild(textNode)
+//         // target.appendChild(tag)
+//     }
+//
+//
+// }, false)
 
 
 function makeLottoNum(){
